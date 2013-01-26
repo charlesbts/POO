@@ -1,0 +1,87 @@
+Informações importantes
+
+Descrição dos códigos-fonte do projeto:
+	main.c: código-fonte principal, contendo a interface textual e chamada de funções
+	funcoes_def.h: código-fonte de definição das funções
+	funcoes_impl.c: código-fonte de implementação das funções
+	convencoes.h: código-fonte com constantes / códigos utilizadaos no projeto
+
+Não há makefile para este projeto, portanto, deve-se compilar todos os códigos-fonte simultaneamente.
+
+Os códigos-fonte foram produzidos utilizando-se o IDE Code::Blocks e o arquivo de projeto está disponível na pasta raiz do
+projeto.
+
+***************************************************************************************************************************
+Arquivos
+
+Arquivos necessários (devem estar na pasta raiz do projeto, junto com os outros arquivos):
+	lista1.txt
+	lista2.txt
+Arquivos gerados:
+	Listas Invertidas:
+		led_lista1.txt: contém a lista de espaços disponíveis da primeira lista
+		led_lista1.txt: contém a lista de espaços disponíveis da segunda lista
+	Índices Primarios:
+		indiceprimario1.ind: contém as chaves primárias e os byte offsets dos registros da primeira lista
+		indiceprimario2.ind: contém as chaves primárias e os byte offsets dos registros da segunda lista
+	Índices Secundários:
+		idx_secundaria1op.ind: contém os índices secundários de OP da primeira lista
+		idx_secundaria2op.ind: contém os índices secundários de OP da segunda lista
+		idx_secundaria1tr.ind: contém os índices secundários de Turma da primeira lista
+		idx_secundaria2tr.ind: contém os índices secundários de Turma da segunda lista
+	Arquivos de Label ID:
+		lid_secundaria1op.ind: contém os Label ID relacionados a OP da primeira lista
+		lid_secundaria2op.ind: contém os Label ID relacionados a OP da segunda lista
+		lid_secundaria1tr.ind: contém os Label ID relacionados a Turma da primeira lista
+		lid_secundaria2tr.ind: contém os Label ID relacionados a Turma da segunda lista
+***************************************************************************************************************************
+Inicialização
+
+O programa pergunta se é a primeira vez que é rodado. O caracter 's' deve ser introduzido para que o programa se inicialize
+corretamente. Esta opção deve ser utilizada também caso se deseje reconstruir todos os arquivos gerados pelo mesmo.
+Qualquer valor diferente de 's' ou 'S' é tratado como 'n', e, neste caso, o programa somente checa a presença das listas.
+***************************************************************************************************************************
+Menu do programa (main menu):
+
+--------------------------------------------
+Menu Principal
+--------------------------------------------
+0 - Sair
+1 - Manipular a primeira lista
+2 - Manipular a segunda lista
+3 - Intercalar as listas
+Opcao: 
+***************************************************************************************************************************
+Este menu seleciona a lista a ser tratada; A opção de "merge" só pode ser acessada por aqui.
+As operações são auto-explicativas.
+***************************************************************************************************************************
+Submenu de lista:
+
+--------------------------------------------
+Operacoes com a Lista x
+--------------------------------------------
+0 - Voltar
+1 - Criar arquivo de indices primarios
+2 - Criar arquivos de indices secundarios de OP
+3 - Criar arquivos de indices secundarios de Turma
+4 - Inserir registro
+5 - Excluir registro
+6 - Atualizar registro
+7 - Mostrar o arquivo de Registros
+8 - Reconstruir todos os indices
+--------------------------------------------
+Opcao: 
+***************************************************************************************************************************
+Este menu seleciona a opçao a ser tratada na lista 'x' (x é substituído pelo número da lista).
+Detalhes das operações:
+1: Gera um arquivo de índices primários baseado no estado atual da lista;
+2: Gera os arquivos relacionados ao índice primário de OP baseados no estado atual da lista;
+3: Gera os arquivos relacionados ao índice primário de turma baseados no estado atual da lista;
+4: Possibilita a inserção de um registro;
+5: Possibilita a exclusão de um registro;
+6: Possibilita a atualização de um registro:
+	*Primeiramente, pergunta o nome e a matrícula do usuário, para verificar sua existência;
+	*Em seguida, caso exista, pergunta todos os novos dados;
+7: Exibe em tela o arquivo de registros no estado atual;
+8: Chama as funções para reconstruir todos os índices (primários e secundários) baseados no estado atual da lista.
+***************************************************************************************************************************
