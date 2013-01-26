@@ -1,0 +1,200 @@
+# depslib dependency file v1.0
+1357283859 source:c:\users\shaine\desktop\projetopoo\consultoriomedico\main.cpp
+	<iostream>
+	"BancoDados/Headers/BancoDados.h"
+
+1349416168 source:c:\users\shaine\desktop\projetopoo\consultoriomedico\bancodados\sources\sqlite3.c
+	"config.h"
+	<stdint.h>
+	<inttypes.h>
+	<tcl.h>
+	<stdarg.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<stddef.h>
+	<windows.h>
+	<ctype.h>
+	<time.h>
+	<sys/sysctl.h>
+	<malloc/malloc.h>
+	<libkern/OSAtomic.h>
+	<malloc.h>
+	<pthread.h>
+	<math.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<unistd.h>
+	<sys/time.h>
+	<errno.h>
+	<sys/mman.h>
+	<sys/ioctl.h>
+	<semaphore.h>
+	<limits.h>
+	<sys/file.h>
+	<sys/param.h>
+	<sys/mount.h>
+	<utime.h>
+	<dlfcn.h>
+	<sys/cygwin.h>
+	"sqlite3rtree.h"
+	<unicode/utypes.h>
+	<unicode/uregex.h>
+	<unicode/ustring.h>
+	<unicode/ucol.h>
+	<unicode/ubrk.h>
+	<unicode/utf16.h>
+
+1357283791 c:\users\shaine\desktop\projetopoo\consultoriomedico\bancodados\headers\bancodados.h
+	"sqlite3.h"
+	<string>
+	<vector>
+
+1349416168 c:\users\shaine\desktop\projetopoo\consultoriomedico\bancodados\headers\sqlite3.h
+	<stdarg.h>
+
+1357285182 source:c:\users\shaine\desktop\projetopoo\consultoriomedico\bancodados\sources\bancodados.cpp
+	"C:\Users\Shaine\Desktop\ProjetoPOO\ConsultorioMedico\BancoDados\Headers\BancoDados.h"
+	"sqlite3.h"
+	<iostream>
+
+1349416168 source:c:\users\shaine\desktop\projetopoo2\consultoriomedico\bancodados\sources\sqlite3.c
+	"config.h"
+	<stdint.h>
+	<inttypes.h>
+	<tcl.h>
+	<stdarg.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<stddef.h>
+	<windows.h>
+	<ctype.h>
+	<time.h>
+	<sys/sysctl.h>
+	<malloc/malloc.h>
+	<libkern/OSAtomic.h>
+	<malloc.h>
+	<pthread.h>
+	<math.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<unistd.h>
+	<sys/time.h>
+	<errno.h>
+	<sys/mman.h>
+	<sys/ioctl.h>
+	<semaphore.h>
+	<limits.h>
+	<sys/file.h>
+	<sys/param.h>
+	<sys/mount.h>
+	<utime.h>
+	<dlfcn.h>
+	<sys/cygwin.h>
+	"sqlite3rtree.h"
+	<unicode/utypes.h>
+	<unicode/uregex.h>
+	<unicode/ustring.h>
+	<unicode/ucol.h>
+	<unicode/ubrk.h>
+	<unicode/utf16.h>
+
+1358018158 source:c:\users\shaine\desktop\projetopoo2\consultoriomedico\main.cpp
+	<cstdlib>
+	"InterfaceUsuario/Headers/classeInterfaceUsuario.h"
+
+1358017999 c:\users\shaine\desktop\projetopoo2\consultoriomedico\bancodados\headers\bancodados.h
+	"sqlite3.h"
+	<string>
+	<vector>
+
+1349416168 c:\users\shaine\desktop\projetopoo2\consultoriomedico\bancodados\headers\sqlite3.h
+	<stdarg.h>
+
+1358012934 source:c:\users\shaine\desktop\projetopoo2\consultoriomedico\bancodados\sources\bancodados.cpp
+	<iostream>
+	"../Headers/BancoDados.h"
+	"sqlite3.h"
+
+1349416168 source:c:\users\shaine\desktop\projetopoo2\consultoriomedico\database\sources\sqlite3.c
+	"config.h"
+	<stdint.h>
+	<inttypes.h>
+	<tcl.h>
+	<stdarg.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<stddef.h>
+	<windows.h>
+	<ctype.h>
+	<time.h>
+	<sys/sysctl.h>
+	<malloc/malloc.h>
+	<libkern/OSAtomic.h>
+	<malloc.h>
+	<pthread.h>
+	<math.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<unistd.h>
+	<sys/time.h>
+	<errno.h>
+	<sys/mman.h>
+	<sys/ioctl.h>
+	<semaphore.h>
+	<limits.h>
+	<sys/file.h>
+	<sys/param.h>
+	<sys/mount.h>
+	<utime.h>
+	<dlfcn.h>
+	<sys/cygwin.h>
+	"sqlite3rtree.h"
+	<unicode/utypes.h>
+	<unicode/uregex.h>
+	<unicode/ustring.h>
+	<unicode/ucol.h>
+	<unicode/ubrk.h>
+	<unicode/utf16.h>
+
+1358018125 source:c:\users\shaine\desktop\projetopoo2\consultoriomedico\interfaceusuario\sources\metodosintefaceusuario.cpp
+	<iostream>
+	"../Headers/classeInterfaceUsuario.h"
+	"../../LogicaNegocio/Headers/classeMedico.h"
+
+1358017999 c:\users\shaine\desktop\projetopoo2\consultoriomedico\interfaceusuario\headers\classeinterfaceusuario.h
+	<iostream>
+
+1358017999 source:c:\users\shaine\desktop\projetopoo2\consultoriomedico\logicanegocio\sources\metodosclassemedico.cpp
+	<iostream>
+	"../Headers/classeMedico.h"
+	"../../BancoDados/Headers/rotinasBD.h"
+	<string.h>
+
+1358018063 c:\users\shaine\desktop\projetopoo2\consultoriomedico\logicanegocio\headers\classemedico.h
+	<iostream>
+	<exception>
+	"classePessoa.h"
+
+1358018063 c:\users\shaine\desktop\projetopoo2\consultoriomedico\logicanegocio\headers\classepessoa.h
+	<iostream>
+	<vector>
+
+1358018103 source:c:\users\shaine\desktop\projetopoo2\consultoriomedico\bancodados\sources\rotinasbd.cpp
+	<iostream>
+	<string.h>
+	"../Headers/rotinasBD.h"
+	"../../LogicaNegocio/Headers/classeMedico.h"
+
+1358017999 c:\users\shaine\desktop\projetopoo2\consultoriomedico\bancodados\headers\rotinasbd.h
+	"../../LogicaNegocio/Headers/classeMedico.h"
+	"BancoDados.h"
+

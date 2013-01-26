@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ConsultorioMedico" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\ConsultorioMedico" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\ConsultorioMedico" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="BancoDados\Headers\BancoDados.h" />
+		<Unit filename="BancoDados\Headers\rotinasBD.h" />
+		<Unit filename="BancoDados\Headers\sqlite3.h" />
+		<Unit filename="BancoDados\Sources\BancoDados.cpp" />
+		<Unit filename="BancoDados\Sources\RotinasBD.cpp" />
+		<Unit filename="BancoDados\Sources\sqlite3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="InterfaceUsuario\Headers\classeInterfaceUsuario.h" />
+		<Unit filename="InterfaceUsuario\Sources\MetodosIntefaceUsuario.cpp" />
+		<Unit filename="LogicaNegocio\Headers\classeConsulta.h" />
+		<Unit filename="LogicaNegocio\Headers\classeMedico.h" />
+		<Unit filename="LogicaNegocio\Headers\classePaciente.h" />
+		<Unit filename="LogicaNegocio\Headers\classePessoa.h" />
+		<Unit filename="LogicaNegocio\Sources\MetodosClasseMedico.cpp" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
