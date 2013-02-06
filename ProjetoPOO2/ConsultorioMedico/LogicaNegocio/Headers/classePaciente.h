@@ -1,7 +1,7 @@
 #ifndef PACIENTES_H
 #define PACIENTES_H
 #include <iostream>
-#include "../LogicaNegocio/Headers/classePessoa.h"
+#include "classePessoa.h"
 using namespace std;
 
 class PacienteExcecao : public exception {

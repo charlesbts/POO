@@ -1,28 +1,38 @@
 #include <iostream>
-#include <string.h>
+#include <map>
 #include "../Headers/rotinasBD.h"
 #include "../../LogicaNegocio/Headers/classeMedico.h"
 
-void Rotinas::insere_medico(Medico *newmedico){
+using namespace std;
+
+void Rotinas::insere_medico(Medico *novoMedico){
     BancoDados *bd;
-    string query="INSERT INTO Medico VALUES('"+ newmedico->m_nome +"','" +newmedico->m_especialidade+"');";
-    bd= new BancoDados(conversor_string_to_char("ConsultorioMedico.sqlite3"));
-    bd->rotina(conversor_string_to_char("CREATE TABLE Medico(nome TEXT,especialidade TEXT);"));
-    bd->rotina(conversor_string_to_char(query));
+    bd = new BancoDados("consultorio.sqlite3");
+    bd->executa_statement();
+    bd->prepare("INSERT INTO Medico(nome, especialidade) VALUES(?, ?);");
+    bd->liga_string(1, novoMedico->m_nome);
+    bd->liga_string(2, novoMedico->m_especialidade);
+    bd->executa_statement();
     bd->close();
 }
 
-vector<vector<string> > Rotinas::busca_tabela(string nome, string tabela){
-    vector<vector<string> > resultadoBusca;
-    BancoDados *bd = new BancoDados(conversor_string_to_char("ConsultorioMedico.sqlite3"));
-    string query = "SELECT "+nome+" FROM "+tabela+";";
-    resultadoBusca = bd->rotina(conversor_string_to_char(query));
-    return resultadoBusca;
-    }
+int Rotinas::deleta_medico(string nomeMedico){
+    BancoDados *bd;
+    bd = new BancoDados("consultorio.sqlite3");
+    bd->prepare("DELETE FROM Medico WHERE nome like ?;");
+    bd->liga_string(1, nomeMedico);
+    bd->executa_statement();
+    bd->close();
+    return 0;
+}
 
-char* Rotinas::conversor_string_to_char(string linha){
-    char *palavra;
-    palavra = new char[linha.size()+1];
-    strcpy(palavra,linha.c_str());
-    return palavra;
+list<string> Rotinas::busca_medico(string nomeMedico){
+    BancoDados *bd;
+    list<string> listaResultado;
+    bd = new BancoDados("consultorio.sqlite3");
+    bd->prepare("SELECT * FROM Medico WHERE nome like ?;");
+    bd->liga_string(1, nomeMedico);
+    listaResultado = bd->executa_statement();
+    bd->close();
+    return listaResultado;
 }

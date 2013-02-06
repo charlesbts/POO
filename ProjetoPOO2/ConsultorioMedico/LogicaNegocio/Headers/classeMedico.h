@@ -3,6 +3,7 @@
 #include <iostream>
 #include <exception>
 #include "classePessoa.h"
+#include "../../BancoDados/Headers/BancoDados.h"
 using namespace std;
 
 class MedicoExcecao : public exception {
@@ -16,11 +17,11 @@ class Medico : public Pessoa {
 public:
     string m_especialidade;
 public:
-    Medico(string ,string );
-    void cadastra_medico(string ,string ); //throw (MedicoExcecao);
-  //  void descadastra_pessoa(char*) throw(MedicoExcecao);
-    //void altera_cadastro(Medico *) throw (MedicoExcecao);
-    vector<vector<string> > procura_pessoa(string nome);
+    Medico(string nomeMedico,string especialidade);
+    bool cadastra_medico(string nomeMedico ,string especialidade); //throw (MedicoExcecao);
+    bool descadastra_pessoa(string nomeMedico); //throw(MedicoExcecao);
+    bool altera_cadastro(string nomeMedico, string novoNomeMedico, string especialidade); //throw (MedicoExcecao);
+    list<string> procura_pessoa(string nome);
     ~Medico();
 };
 #endif

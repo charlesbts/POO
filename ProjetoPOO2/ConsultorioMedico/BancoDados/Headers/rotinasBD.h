@@ -6,9 +6,8 @@
 class Rotinas{
 public:
     void insere_medico(Medico*);
-    vector<vector<string> > busca_tabela(string nome, string tabela);
-    char* conversor_string_to_char(string);
-
+    list<string> busca_medico(string nome);
+    int deleta_medico(string nome);
 };
 #endif
 

@@ -104,20 +104,23 @@
 	<unicode/ubrk.h>
 	<unicode/utf16.h>
 
-1358018158 source:c:\users\shaine\desktop\projetopoo2\consultoriomedico\main.cpp
+1359938655 source:c:\users\shaine\desktop\projetopoo2\consultoriomedico\main.cpp
 	<cstdlib>
 	"InterfaceUsuario/Headers/classeInterfaceUsuario.h"
 
-1358017999 c:\users\shaine\desktop\projetopoo2\consultoriomedico\bancodados\headers\bancodados.h
+1360111126 c:\users\shaine\desktop\projetopoo2\consultoriomedico\bancodados\headers\bancodados.h
 	"sqlite3.h"
 	<string>
-	<vector>
+	<list>
+	<exception>
 
 1349416168 c:\users\shaine\desktop\projetopoo2\consultoriomedico\bancodados\headers\sqlite3.h
 	<stdarg.h>
 
-1358012934 source:c:\users\shaine\desktop\projetopoo2\consultoriomedico\bancodados\sources\bancodados.cpp
+1360111116 source:c:\users\shaine\desktop\projetopoo2\consultoriomedico\bancodados\sources\bancodados.cpp
 	<iostream>
+	<stdio.h>
+	<list>
 	"../Headers/BancoDados.h"
 	"sqlite3.h"
 
@@ -165,36 +168,49 @@
 	<unicode/ubrk.h>
 	<unicode/utf16.h>
 
-1358018125 source:c:\users\shaine\desktop\projetopoo2\consultoriomedico\interfaceusuario\sources\metodosintefaceusuario.cpp
+1360115985 source:c:\users\shaine\desktop\projetopoo2\consultoriomedico\interfaceusuario\sources\metodosintefaceusuario.cpp
 	<iostream>
 	"../Headers/classeInterfaceUsuario.h"
 	"../../LogicaNegocio/Headers/classeMedico.h"
 
-1358017999 c:\users\shaine\desktop\projetopoo2\consultoriomedico\interfaceusuario\headers\classeinterfaceusuario.h
+1360113668 c:\users\shaine\desktop\projetopoo2\consultoriomedico\interfaceusuario\headers\classeinterfaceusuario.h
+	"../../LogicaNegocio/Headers/classeMedico.h"
+	"../../LogicaNegocio/Headers/classeConsulta.h"
+	"../../LogicaNegocio/Headers/classePaciente.h"
+	"../../LogicaNegocio/Headers/classePessoa.h"
 	<iostream>
+	<cstdlib>
 
-1358017999 source:c:\users\shaine\desktop\projetopoo2\consultoriomedico\logicanegocio\sources\metodosclassemedico.cpp
+1360116182 source:c:\users\shaine\desktop\projetopoo2\consultoriomedico\logicanegocio\sources\metodosclassemedico.cpp
 	<iostream>
 	"../Headers/classeMedico.h"
 	"../../BancoDados/Headers/rotinasBD.h"
 	<string.h>
 
-1358018063 c:\users\shaine\desktop\projetopoo2\consultoriomedico\logicanegocio\headers\classemedico.h
+1360115985 c:\users\shaine\desktop\projetopoo2\consultoriomedico\logicanegocio\headers\classemedico.h
 	<iostream>
 	<exception>
 	"classePessoa.h"
+	"../../BancoDados/Headers/BancoDados.h"
 
-1358018063 c:\users\shaine\desktop\projetopoo2\consultoriomedico\logicanegocio\headers\classepessoa.h
+1360028025 c:\users\shaine\desktop\projetopoo2\consultoriomedico\logicanegocio\headers\classepessoa.h
 	<iostream>
-	<vector>
+	<list>
 
-1358018103 source:c:\users\shaine\desktop\projetopoo2\consultoriomedico\bancodados\sources\rotinasbd.cpp
+1360031579 source:c:\users\shaine\desktop\projetopoo2\consultoriomedico\bancodados\sources\rotinasbd.cpp
 	<iostream>
-	<string.h>
+	<map>
 	"../Headers/rotinasBD.h"
 	"../../LogicaNegocio/Headers/classeMedico.h"
 
-1358017999 c:\users\shaine\desktop\projetopoo2\consultoriomedico\bancodados\headers\rotinasbd.h
+1360031422 c:\users\shaine\desktop\projetopoo2\consultoriomedico\bancodados\headers\rotinasbd.h
 	"../../LogicaNegocio/Headers/classeMedico.h"
 	"BancoDados.h"
+
+1355617182 c:\users\shaine\desktop\projetopoo2\consultoriomedico\logicanegocio\headers\classeconsulta.h
+	<iostream>
+
+1360027744 c:\users\shaine\desktop\projetopoo2\consultoriomedico\logicanegocio\headers\classepaciente.h
+	<iostream>
+	"classePessoa.h"
 

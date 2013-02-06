@@ -1,12 +1,22 @@
 #ifndef INTERFACEUSUARIO_H
 #define INTERFACEUSUARIO_H
+#include "../../LogicaNegocio/Headers/classeMedico.h"
+#include "../../LogicaNegocio/Headers/classeConsulta.h"
+#include "../../LogicaNegocio/Headers/classePaciente.h"
+#include "../../LogicaNegocio/Headers/classePessoa.h"
+#define TAM_LINHA 50
 #include <iostream>
+#include <cstdlib>
 using namespace std;
 
 class InterfaceUsuario {
 public:
+    void menu_usuario();
+    void opcao_usuario();
     void cadastra_medico();
-    void procura_pessoa();
+    void descadastra_medico();
+    void atualiza_medico();
+    void procura_medico();
     void lista_consultas_marcadas();
     void lista_medicos_cadastrados();
     void lista_pacientes_cadastrados();

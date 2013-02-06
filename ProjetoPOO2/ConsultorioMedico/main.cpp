@@ -14,8 +14,8 @@ using namespace std;
  */
 int main(int argc, char** argv) {
 InterfaceUsuario *iu;
-iu->cadastra_medico();
-iu->procura_pessoa();
+iu->menu_usuario();
+iu->opcao_usuario();
     return 0;
 }
 
