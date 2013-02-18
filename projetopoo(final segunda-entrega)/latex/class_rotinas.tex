@@ -1,0 +1,345 @@
+\hypertarget{class_rotinas}{\section{ReferÃªncia Ã  classe Rotinas}
+\label{class_rotinas}\index{Rotinas@{Rotinas}}
+}
+\subsection*{Membros pÃºblicos}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_rotinas_ad5f1b8d34c29a4575eb9e127c62b93fa}{insere\-\_\-medico} (\hyperlink{class_medico}{Medico} $\ast$)
+\begin{DoxyCompactList}\small\item\em Persiste um objeto \hyperlink{class_medico}{Medico}. \end{DoxyCompactList}\item 
+list$<$ string $>$ \hyperlink{class_rotinas_abf98b535ba33cdfda48e9fb691be0f3e}{busca\-\_\-medico} (string nome)
+\begin{DoxyCompactList}\small\item\em Faz uma busca de um médico no Banco de Dados usando nome como chave. \end{DoxyCompactList}\item 
+list$<$ string $>$ \hyperlink{class_rotinas_ae2368fffecf6b3fbec824babd1a53553}{busca\-\_\-especialidade} (string especialidade)
+\begin{DoxyCompactList}\small\item\em Faz uma busca de um médico no Banco de Dados usando especialidade como chave. \end{DoxyCompactList}\item 
+int \hyperlink{class_rotinas_a8b1ca17ef6fbe4e4581f930dd8e0e212}{deleta\-\_\-medico} (string nome)
+\begin{DoxyCompactList}\small\item\em Deleta um médico do banco de dados. \end{DoxyCompactList}\item 
+list$<$ string $>$ \hyperlink{class_rotinas_a92ccb1d49745795027205dc5cf6a92b8}{lista\-\_\-medicos} ()
+\begin{DoxyCompactList}\small\item\em Retorna uma lista de todos os medicos que estão no Banco de Dados. \end{DoxyCompactList}\item 
+void \hyperlink{class_rotinas_ad378837ad0baec2d93d18d9b20250dc4}{insere\-\_\-paciente} (\hyperlink{class_paciente}{Paciente} $\ast$)
+\begin{DoxyCompactList}\small\item\em Persiste um objeto \hyperlink{class_paciente}{Paciente}. \end{DoxyCompactList}\item 
+list$<$ string $>$ \hyperlink{class_rotinas_ab540b9275ef02cc68ccddfe5a83b2533}{busca\-\_\-paciente} (string nome)
+\begin{DoxyCompactList}\small\item\em Faz uma busca de um paciente no Banco de Dados usando nome como chave. \end{DoxyCompactList}\item 
+int \hyperlink{class_rotinas_a803f16faf62f8401db67e9c2820b6ef4}{deleta\-\_\-paciente} (string nome)
+\begin{DoxyCompactList}\small\item\em Deleta um paciente do banco de dados. \end{DoxyCompactList}\item 
+list$<$ string $>$ \hyperlink{class_rotinas_ae78f98f6a972e906de422555df40af37}{lista\-\_\-pacientes} ()
+\begin{DoxyCompactList}\small\item\em Retorna uma lista de todos os pacientes que estão no Banco de Dados. \end{DoxyCompactList}\item 
+void \hyperlink{class_rotinas_a3201f8a0d5f7131e8bb440933359c5f6}{insere\-\_\-consulta} (\hyperlink{class_consulta}{Consulta} $\ast$)
+\begin{DoxyCompactList}\small\item\em Persiste um objeto \hyperlink{class_consulta}{Consulta}. \end{DoxyCompactList}\item 
+list$<$ string $>$ \hyperlink{class_rotinas_adbf9b1cedeebcd2630a29ae0ba14543d}{busca\-\_\-consulta} (string nome\-Paciente, string nome\-Medico)
+\begin{DoxyCompactList}\small\item\em Faz uma busca de uma consulta no Banco de Dados usando nome do paciente e do médico como chave. \end{DoxyCompactList}\item 
+void \hyperlink{class_rotinas_a265b066027401ff91d0c49d8b3ccddb7}{deleta\-\_\-consulta} (string nome\-Paciente, string nome\-Medico)
+\begin{DoxyCompactList}\small\item\em Deleta uma consulta do banco de dados. \end{DoxyCompactList}\item 
+list$<$ string $>$ \hyperlink{class_rotinas_ad1859c3ad28504521a1d243c01419371}{lista\-\_\-consultas} ()
+\begin{DoxyCompactList}\small\item\em Retorna uma lista de todas as consultas que estão no Banco de Dados. \end{DoxyCompactList}\item 
+list$<$ string $>$ \hyperlink{class_rotinas_a307ed8392d3de3f53ee251a64d447cb5}{busca\-\_\-pacientes\-\_\-de\-\_\-um\-\_\-medico} (string nome\-Medico)
+\begin{DoxyCompactList}\small\item\em Faz uma busca de todos os pacientes que estão em consulta com determinado médico. \end{DoxyCompactList}\item 
+list$<$ string $>$ \hyperlink{class_rotinas_ab124ca5034dea9c16e198bb419fc4f1d}{busca\-\_\-medicos\-\_\-de\-\_\-um\-\_\-paciente} (string nome\-Paciente)
+\begin{DoxyCompactList}\small\item\em Faz uma busca de todos os medicos que estão em consulta com determinado paciente. \end{DoxyCompactList}\item 
+list$<$ string $>$ \hyperlink{class_rotinas_a78224ed3adb8f75fc3dccc677adc95f9}{busca\-\_\-consultas\-\_\-paciente} (string nome\-Paciente)
+\begin{DoxyCompactList}\small\item\em Faz uma busca de todas as consultas na qual o paciente está cadastrado. \end{DoxyCompactList}\item 
+list$<$ string $>$ \hyperlink{class_rotinas_ac5e447755d3bd1f7c7f775a57d81d648}{busca\-\_\-consultas\-\_\-medico} (string nome\-Medico)
+\begin{DoxyCompactList}\small\item\em Faz uma busca de todas as consultas na qual o médico está cadastrado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{DocumentaÃ§Ã£o dos mÃ©todos}
+\hypertarget{class_rotinas_adbf9b1cedeebcd2630a29ae0ba14543d}{\index{Rotinas@{Rotinas}!busca\-\_\-consulta@{busca\-\_\-consulta}}
+\index{busca\-\_\-consulta@{busca\-\_\-consulta}!Rotinas@{Rotinas}}
+\subsubsection[{busca\-\_\-consulta}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ string $>$ Rotinas\-::busca\-\_\-consulta (
+\begin{DoxyParamCaption}
+\item[{string}]{nome\-Paciente, }
+\item[{string}]{nome\-Medico}
+\end{DoxyParamCaption}
+)}}\label{class_rotinas_adbf9b1cedeebcd2630a29ae0ba14543d}
+
+
+Faz uma busca de uma consulta no Banco de Dados usando nome do paciente e do médico como chave. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em 1} & -\/ String contendo o nome do paciente. \\
+\hline
+{\em 2} & -\/ String contendo o nome do médico. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Lista de string. 
+\end{DoxyReturn}
+\hypertarget{class_rotinas_ac5e447755d3bd1f7c7f775a57d81d648}{\index{Rotinas@{Rotinas}!busca\-\_\-consultas\-\_\-medico@{busca\-\_\-consultas\-\_\-medico}}
+\index{busca\-\_\-consultas\-\_\-medico@{busca\-\_\-consultas\-\_\-medico}!Rotinas@{Rotinas}}
+\subsubsection[{busca\-\_\-consultas\-\_\-medico}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ string $>$ Rotinas\-::busca\-\_\-consultas\-\_\-medico (
+\begin{DoxyParamCaption}
+\item[{string}]{nome\-Medico}
+\end{DoxyParamCaption}
+)}}\label{class_rotinas_ac5e447755d3bd1f7c7f775a57d81d648}
+
+
+Faz uma busca de todas as consultas na qual o médico está cadastrado. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em String} & contendo nome do médico. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Lista de string. 
+\end{DoxyReturn}
+\hypertarget{class_rotinas_a78224ed3adb8f75fc3dccc677adc95f9}{\index{Rotinas@{Rotinas}!busca\-\_\-consultas\-\_\-paciente@{busca\-\_\-consultas\-\_\-paciente}}
+\index{busca\-\_\-consultas\-\_\-paciente@{busca\-\_\-consultas\-\_\-paciente}!Rotinas@{Rotinas}}
+\subsubsection[{busca\-\_\-consultas\-\_\-paciente}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ string $>$ Rotinas\-::busca\-\_\-consultas\-\_\-paciente (
+\begin{DoxyParamCaption}
+\item[{string}]{nome\-Paciente}
+\end{DoxyParamCaption}
+)}}\label{class_rotinas_a78224ed3adb8f75fc3dccc677adc95f9}
+
+
+Faz uma busca de todas as consultas na qual o paciente está cadastrado. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em String} & contendo nome do paciente. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Lista de string. 
+\end{DoxyReturn}
+\hypertarget{class_rotinas_ae2368fffecf6b3fbec824babd1a53553}{\index{Rotinas@{Rotinas}!busca\-\_\-especialidade@{busca\-\_\-especialidade}}
+\index{busca\-\_\-especialidade@{busca\-\_\-especialidade}!Rotinas@{Rotinas}}
+\subsubsection[{busca\-\_\-especialidade}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ string $>$ Rotinas\-::busca\-\_\-especialidade (
+\begin{DoxyParamCaption}
+\item[{string}]{especialidade}
+\end{DoxyParamCaption}
+)}}\label{class_rotinas_ae2368fffecf6b3fbec824babd1a53553}
+
+
+Faz uma busca de um médico no Banco de Dados usando especialidade como chave. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em String} & contendo a especialidade do médico. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Lista de string. 
+\end{DoxyReturn}
+\hypertarget{class_rotinas_abf98b535ba33cdfda48e9fb691be0f3e}{\index{Rotinas@{Rotinas}!busca\-\_\-medico@{busca\-\_\-medico}}
+\index{busca\-\_\-medico@{busca\-\_\-medico}!Rotinas@{Rotinas}}
+\subsubsection[{busca\-\_\-medico}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ string $>$ Rotinas\-::busca\-\_\-medico (
+\begin{DoxyParamCaption}
+\item[{string}]{nome}
+\end{DoxyParamCaption}
+)}}\label{class_rotinas_abf98b535ba33cdfda48e9fb691be0f3e}
+
+
+Faz uma busca de um médico no Banco de Dados usando nome como chave. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em String} & contendo o nome do médico. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Lista de string. 
+\end{DoxyReturn}
+\hypertarget{class_rotinas_ab124ca5034dea9c16e198bb419fc4f1d}{\index{Rotinas@{Rotinas}!busca\-\_\-medicos\-\_\-de\-\_\-um\-\_\-paciente@{busca\-\_\-medicos\-\_\-de\-\_\-um\-\_\-paciente}}
+\index{busca\-\_\-medicos\-\_\-de\-\_\-um\-\_\-paciente@{busca\-\_\-medicos\-\_\-de\-\_\-um\-\_\-paciente}!Rotinas@{Rotinas}}
+\subsubsection[{busca\-\_\-medicos\-\_\-de\-\_\-um\-\_\-paciente}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ string $>$ Rotinas\-::busca\-\_\-medicos\-\_\-de\-\_\-um\-\_\-paciente (
+\begin{DoxyParamCaption}
+\item[{string}]{nome\-Paciente}
+\end{DoxyParamCaption}
+)}}\label{class_rotinas_ab124ca5034dea9c16e198bb419fc4f1d}
+
+
+Faz uma busca de todos os medicos que estão em consulta com determinado paciente. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em String} & contendo nome do paciente. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Lista de string. 
+\end{DoxyReturn}
+\hypertarget{class_rotinas_ab540b9275ef02cc68ccddfe5a83b2533}{\index{Rotinas@{Rotinas}!busca\-\_\-paciente@{busca\-\_\-paciente}}
+\index{busca\-\_\-paciente@{busca\-\_\-paciente}!Rotinas@{Rotinas}}
+\subsubsection[{busca\-\_\-paciente}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ string $>$ Rotinas\-::busca\-\_\-paciente (
+\begin{DoxyParamCaption}
+\item[{string}]{nome}
+\end{DoxyParamCaption}
+)}}\label{class_rotinas_ab540b9275ef02cc68ccddfe5a83b2533}
+
+
+Faz uma busca de um paciente no Banco de Dados usando nome como chave. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em String} & contendo o nome do paciente. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Lista de string. 
+\end{DoxyReturn}
+\hypertarget{class_rotinas_a307ed8392d3de3f53ee251a64d447cb5}{\index{Rotinas@{Rotinas}!busca\-\_\-pacientes\-\_\-de\-\_\-um\-\_\-medico@{busca\-\_\-pacientes\-\_\-de\-\_\-um\-\_\-medico}}
+\index{busca\-\_\-pacientes\-\_\-de\-\_\-um\-\_\-medico@{busca\-\_\-pacientes\-\_\-de\-\_\-um\-\_\-medico}!Rotinas@{Rotinas}}
+\subsubsection[{busca\-\_\-pacientes\-\_\-de\-\_\-um\-\_\-medico}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ string $>$ Rotinas\-::busca\-\_\-pacientes\-\_\-de\-\_\-um\-\_\-medico (
+\begin{DoxyParamCaption}
+\item[{string}]{nome\-Medico}
+\end{DoxyParamCaption}
+)}}\label{class_rotinas_a307ed8392d3de3f53ee251a64d447cb5}
+
+
+Faz uma busca de todos os pacientes que estão em consulta com determinado médico. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em String} & contendo nome do médico. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Lista de string. 
+\end{DoxyReturn}
+\hypertarget{class_rotinas_a265b066027401ff91d0c49d8b3ccddb7}{\index{Rotinas@{Rotinas}!deleta\-\_\-consulta@{deleta\-\_\-consulta}}
+\index{deleta\-\_\-consulta@{deleta\-\_\-consulta}!Rotinas@{Rotinas}}
+\subsubsection[{deleta\-\_\-consulta}]{\setlength{\rightskip}{0pt plus 5cm}void Rotinas\-::deleta\-\_\-consulta (
+\begin{DoxyParamCaption}
+\item[{string}]{nome\-Paciente, }
+\item[{string}]{nome\-Medico}
+\end{DoxyParamCaption}
+)}}\label{class_rotinas_a265b066027401ff91d0c49d8b3ccddb7}
+
+
+Deleta uma consulta do banco de dados. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em 1} & -\/ String contendo o nome do paciente. \\
+\hline
+{\em 2} & -\/ String contendo o nome do médico. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_rotinas_a8b1ca17ef6fbe4e4581f930dd8e0e212}{\index{Rotinas@{Rotinas}!deleta\-\_\-medico@{deleta\-\_\-medico}}
+\index{deleta\-\_\-medico@{deleta\-\_\-medico}!Rotinas@{Rotinas}}
+\subsubsection[{deleta\-\_\-medico}]{\setlength{\rightskip}{0pt plus 5cm}int Rotinas\-::deleta\-\_\-medico (
+\begin{DoxyParamCaption}
+\item[{string}]{nome}
+\end{DoxyParamCaption}
+)}}\label{class_rotinas_a8b1ca17ef6fbe4e4581f930dd8e0e212}
+
+
+Deleta um médico do banco de dados. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em String} & contendo o nome do médico. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_rotinas_a803f16faf62f8401db67e9c2820b6ef4}{\index{Rotinas@{Rotinas}!deleta\-\_\-paciente@{deleta\-\_\-paciente}}
+\index{deleta\-\_\-paciente@{deleta\-\_\-paciente}!Rotinas@{Rotinas}}
+\subsubsection[{deleta\-\_\-paciente}]{\setlength{\rightskip}{0pt plus 5cm}int Rotinas\-::deleta\-\_\-paciente (
+\begin{DoxyParamCaption}
+\item[{string}]{nome}
+\end{DoxyParamCaption}
+)}}\label{class_rotinas_a803f16faf62f8401db67e9c2820b6ef4}
+
+
+Deleta um paciente do banco de dados. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em String} & contendo o nome do paciente. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_rotinas_a3201f8a0d5f7131e8bb440933359c5f6}{\index{Rotinas@{Rotinas}!insere\-\_\-consulta@{insere\-\_\-consulta}}
+\index{insere\-\_\-consulta@{insere\-\_\-consulta}!Rotinas@{Rotinas}}
+\subsubsection[{insere\-\_\-consulta}]{\setlength{\rightskip}{0pt plus 5cm}void Rotinas\-::insere\-\_\-consulta (
+\begin{DoxyParamCaption}
+\item[{{\bf Consulta} $\ast$}]{consulta}
+\end{DoxyParamCaption}
+)}}\label{class_rotinas_a3201f8a0d5f7131e8bb440933359c5f6}
+
+
+Persiste um objeto \hyperlink{class_consulta}{Consulta}. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em Objeto} & \hyperlink{class_consulta}{Consulta}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_rotinas_ad5f1b8d34c29a4575eb9e127c62b93fa}{\index{Rotinas@{Rotinas}!insere\-\_\-medico@{insere\-\_\-medico}}
+\index{insere\-\_\-medico@{insere\-\_\-medico}!Rotinas@{Rotinas}}
+\subsubsection[{insere\-\_\-medico}]{\setlength{\rightskip}{0pt plus 5cm}void Rotinas\-::insere\-\_\-medico (
+\begin{DoxyParamCaption}
+\item[{{\bf Medico} $\ast$}]{novo\-Medico}
+\end{DoxyParamCaption}
+)}}\label{class_rotinas_ad5f1b8d34c29a4575eb9e127c62b93fa}
+
+
+Persiste um objeto \hyperlink{class_medico}{Medico}. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em Objeto} & \hyperlink{class_medico}{Medico}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_rotinas_ad378837ad0baec2d93d18d9b20250dc4}{\index{Rotinas@{Rotinas}!insere\-\_\-paciente@{insere\-\_\-paciente}}
+\index{insere\-\_\-paciente@{insere\-\_\-paciente}!Rotinas@{Rotinas}}
+\subsubsection[{insere\-\_\-paciente}]{\setlength{\rightskip}{0pt plus 5cm}void Rotinas\-::insere\-\_\-paciente (
+\begin{DoxyParamCaption}
+\item[{{\bf Paciente} $\ast$}]{novo\-Paciente}
+\end{DoxyParamCaption}
+)}}\label{class_rotinas_ad378837ad0baec2d93d18d9b20250dc4}
+
+
+Persiste um objeto \hyperlink{class_paciente}{Paciente}. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em Objeto} & \hyperlink{class_paciente}{Paciente}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_rotinas_ad1859c3ad28504521a1d243c01419371}{\index{Rotinas@{Rotinas}!lista\-\_\-consultas@{lista\-\_\-consultas}}
+\index{lista\-\_\-consultas@{lista\-\_\-consultas}!Rotinas@{Rotinas}}
+\subsubsection[{lista\-\_\-consultas}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ string $>$ Rotinas\-::lista\-\_\-consultas (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_rotinas_ad1859c3ad28504521a1d243c01419371}
+
+
+Retorna uma lista de todas as consultas que estão no Banco de Dados. 
+
+\begin{DoxyReturn}{Retorna}
+Lista de string. 
+\end{DoxyReturn}
+\hypertarget{class_rotinas_a92ccb1d49745795027205dc5cf6a92b8}{\index{Rotinas@{Rotinas}!lista\-\_\-medicos@{lista\-\_\-medicos}}
+\index{lista\-\_\-medicos@{lista\-\_\-medicos}!Rotinas@{Rotinas}}
+\subsubsection[{lista\-\_\-medicos}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ string $>$ Rotinas\-::lista\-\_\-medicos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_rotinas_a92ccb1d49745795027205dc5cf6a92b8}
+
+
+Retorna uma lista de todos os medicos que estão no Banco de Dados. 
+
+\begin{DoxyReturn}{Retorna}
+Lista de string. 
+\end{DoxyReturn}
+\hypertarget{class_rotinas_ae78f98f6a972e906de422555df40af37}{\index{Rotinas@{Rotinas}!lista\-\_\-pacientes@{lista\-\_\-pacientes}}
+\index{lista\-\_\-pacientes@{lista\-\_\-pacientes}!Rotinas@{Rotinas}}
+\subsubsection[{lista\-\_\-pacientes}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ string $>$ Rotinas\-::lista\-\_\-pacientes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_rotinas_ae78f98f6a972e906de422555df40af37}
+
+
+Retorna uma lista de todos os pacientes que estão no Banco de Dados. 
+
+\begin{DoxyReturn}{Retorna}
+Lista de string. 
+\end{DoxyReturn}
+
+
+A documentaÃ§Ã£o para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+Banco\-Dados/\-Headers/rotinas\-B\-D.\-h\item 
+Banco\-Dados/\-Sources/Rotinas\-B\-D.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,196 @@
+\hypertarget{class_paciente}{\section{Referência à classe Paciente}
+\label{class_paciente}\index{Paciente@{Paciente}}
+}
+Diagrama de heranças da classe Paciente\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_paciente}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_paciente_a97757a37cee1fed63091afd4fced0263}{\hyperlink{class_paciente_a97757a37cee1fed63091afd4fced0263}{Paciente} ()}\label{class_paciente_a97757a37cee1fed63091afd4fced0263}
+
+\begin{DoxyCompactList}\small\item\em Construtor. \end{DoxyCompactList}\item 
+\hyperlink{class_paciente_a76a0071f2727564875046571995ed82a}{Paciente} (string nome\-Paciente, string endereco, string telefone, string idade)
+\begin{DoxyCompactList}\small\item\em Construtor. \end{DoxyCompactList}\item 
+bool \hyperlink{class_paciente_aad39f3bf117694815d92af36478ba350}{cadastra\-\_\-paciente} (string nome\-Paciente, string endereco, string telefone, string idade)
+\begin{DoxyCompactList}\small\item\em Utiliza o construtor para preencher um objeto do tipo \hyperlink{class_paciente}{Paciente}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_paciente_a77b0fded1ef67e647543f17b6f7777b7}{descadastra\-\_\-pessoa} (string nome)
+\begin{DoxyCompactList}\small\item\em Faz um descadastramento de um \hyperlink{class_paciente}{Paciente}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_paciente_aa0f9d3558dde6562865e32f1994dd7e7}{altera\-\_\-cadastro} (string nome\-Paciente, string novo\-Nome\-Paciente, string novo\-Endereco, string novo\-Telefone, string nova\-Idade)
+\begin{DoxyCompactList}\small\item\em Faz um descadastramento seguido de um cadastro com os novos dados. \end{DoxyCompactList}\item 
+list$<$ string $>$ \hyperlink{class_paciente_addf3d1063cdfff76d288b3dd87f06cae}{procura\-\_\-pessoa} (string nome)
+\begin{DoxyCompactList}\small\item\em Faz uma procura de um \hyperlink{class_paciente}{Paciente}. \end{DoxyCompactList}\item 
+list$<$ string $>$ \hyperlink{class_paciente_a7f155271c4ca6f08bda3c2cfc7408370}{lista\-\_\-pessoas} ()
+\begin{DoxyCompactList}\small\item\em Faz uma procura de todos os pacientes. \end{DoxyCompactList}\item 
+\hypertarget{class_paciente_ad39feabc59663a65217fb8e2d2d08e4e}{\hyperlink{class_paciente_ad39feabc59663a65217fb8e2d2d08e4e}{$\sim$\-Paciente} ()}\label{class_paciente_ad39feabc59663a65217fb8e2d2d08e4e}
+
+\begin{DoxyCompactList}\small\item\em Destrutor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_paciente_a6a499c7352e506b82b056ee48d2b0ce4}{string {\bfseries m\-\_\-endereco}}\label{class_paciente_a6a499c7352e506b82b056ee48d2b0ce4}
+
+\item 
+\hypertarget{class_paciente_a4d73aa574235ee5bc700150ee3977288}{string {\bfseries m\-\_\-telefone}}\label{class_paciente_a4d73aa574235ee5bc700150ee3977288}
+
+\item 
+\hypertarget{class_paciente_ad59bf20f487445cb680d72a8521b16c0}{string {\bfseries m\-\_\-idade}}\label{class_paciente_ad59bf20f487445cb680d72a8521b16c0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_paciente_a76a0071f2727564875046571995ed82a}{\index{Paciente@{Paciente}!Paciente@{Paciente}}
+\index{Paciente@{Paciente}!Paciente@{Paciente}}
+\subsubsection[{Paciente}]{\setlength{\rightskip}{0pt plus 5cm}Paciente\-::\-Paciente (
+\begin{DoxyParamCaption}
+\item[{string}]{nome\-Paciente, }
+\item[{string}]{endereco, }
+\item[{string}]{telefone, }
+\item[{string}]{idade}
+\end{DoxyParamCaption}
+)}}\label{class_paciente_a76a0071f2727564875046571995ed82a}
+
+
+Construtor. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em 1} & -\/ Nome do \hyperlink{class_paciente}{Paciente}. \\
+\hline
+{\em 2} & -\/ Endere�o do \hyperlink{class_paciente}{Paciente}. \\
+\hline
+{\em 3} & -\/ Telefone do \hyperlink{class_paciente}{Paciente}. \\
+\hline
+{\em 4} & -\/ Idade do \hyperlink{class_paciente}{Paciente}. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_paciente_aa0f9d3558dde6562865e32f1994dd7e7}{\index{Paciente@{Paciente}!altera\-\_\-cadastro@{altera\-\_\-cadastro}}
+\index{altera\-\_\-cadastro@{altera\-\_\-cadastro}!Paciente@{Paciente}}
+\subsubsection[{altera\-\_\-cadastro}]{\setlength{\rightskip}{0pt plus 5cm}bool Paciente\-::altera\-\_\-cadastro (
+\begin{DoxyParamCaption}
+\item[{string}]{nome\-Paciente, }
+\item[{string}]{novo\-Nome\-Paciente, }
+\item[{string}]{novo\-Endereco, }
+\item[{string}]{novo\-Telefone, }
+\item[{string}]{nova\-Idade}
+\end{DoxyParamCaption}
+)}}\label{class_paciente_aa0f9d3558dde6562865e32f1994dd7e7}
+
+
+Faz um descadastramento seguido de um cadastro com os novos dados. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em 1} & -\/ Nome do \hyperlink{class_paciente}{Paciente}. \\
+\hline
+{\em 2} & -\/ Novo Nome do \hyperlink{class_paciente}{Paciente}. \\
+\hline
+{\em 3} & -\/ Novo Endere�o do \hyperlink{class_paciente}{Paciente}. \\
+\hline
+{\em 4} & -\/ Novo Telefone do \hyperlink{class_paciente}{Paciente}. \\
+\hline
+{\em 5} & -\/ Nova Idade do \hyperlink{class_paciente}{Paciente}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_paciente_aad39f3bf117694815d92af36478ba350}{\index{Paciente@{Paciente}!cadastra\-\_\-paciente@{cadastra\-\_\-paciente}}
+\index{cadastra\-\_\-paciente@{cadastra\-\_\-paciente}!Paciente@{Paciente}}
+\subsubsection[{cadastra\-\_\-paciente}]{\setlength{\rightskip}{0pt plus 5cm}bool Paciente\-::cadastra\-\_\-paciente (
+\begin{DoxyParamCaption}
+\item[{string}]{nome\-Paciente, }
+\item[{string}]{endereco, }
+\item[{string}]{telefone, }
+\item[{string}]{idade}
+\end{DoxyParamCaption}
+)}}\label{class_paciente_aad39f3bf117694815d92af36478ba350}
+
+
+Utiliza o construtor para preencher um objeto do tipo \hyperlink{class_paciente}{Paciente}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em 1} & -\/ Nome do \hyperlink{class_paciente}{Paciente}. \\
+\hline
+{\em 2} & -\/ Endere�o do \hyperlink{class_paciente}{Paciente}. \\
+\hline
+{\em 3} & -\/ Telefone do \hyperlink{class_paciente}{Paciente}. \\
+\hline
+{\em 4} & -\/ Idade do \hyperlink{class_paciente}{Paciente}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_paciente_a77b0fded1ef67e647543f17b6f7777b7}{\index{Paciente@{Paciente}!descadastra\-\_\-pessoa@{descadastra\-\_\-pessoa}}
+\index{descadastra\-\_\-pessoa@{descadastra\-\_\-pessoa}!Paciente@{Paciente}}
+\subsubsection[{descadastra\-\_\-pessoa}]{\setlength{\rightskip}{0pt plus 5cm}bool Paciente\-::descadastra\-\_\-pessoa (
+\begin{DoxyParamCaption}
+\item[{string}]{nome}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_paciente_a77b0fded1ef67e647543f17b6f7777b7}
+
+
+Faz um descadastramento de um \hyperlink{class_paciente}{Paciente}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em String} & com o nome do \hyperlink{class_paciente}{Paciente}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Sucesso ou Fracasso. 
+\end{DoxyReturn}
+
+
+Implementa \hyperlink{class_pessoa_a8fdb673974e9abed1dd3687198632a6e}{Pessoa}.
+
+\hypertarget{class_paciente_a7f155271c4ca6f08bda3c2cfc7408370}{\index{Paciente@{Paciente}!lista\-\_\-pessoas@{lista\-\_\-pessoas}}
+\index{lista\-\_\-pessoas@{lista\-\_\-pessoas}!Paciente@{Paciente}}
+\subsubsection[{lista\-\_\-pessoas}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ string $>$ Paciente\-::lista\-\_\-pessoas (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_paciente_a7f155271c4ca6f08bda3c2cfc7408370}
+
+
+Faz uma procura de todos os pacientes. 
+
+\begin{DoxyReturn}{Retorna}
+Lista de string. 
+\end{DoxyReturn}
+
+
+Implementa \hyperlink{class_pessoa_af0fd4cc2c5177ff962f5750a314e4209}{Pessoa}.
+
+\hypertarget{class_paciente_addf3d1063cdfff76d288b3dd87f06cae}{\index{Paciente@{Paciente}!procura\-\_\-pessoa@{procura\-\_\-pessoa}}
+\index{procura\-\_\-pessoa@{procura\-\_\-pessoa}!Paciente@{Paciente}}
+\subsubsection[{procura\-\_\-pessoa}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ string $>$ Paciente\-::procura\-\_\-pessoa (
+\begin{DoxyParamCaption}
+\item[{string}]{nome}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_paciente_addf3d1063cdfff76d288b3dd87f06cae}
+
+
+Faz uma procura de um \hyperlink{class_paciente}{Paciente}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em String} & com o nome de um \hyperlink{class_paciente}{Paciente}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Lista de string. 
+\end{DoxyReturn}
+
+
+Implementa \hyperlink{class_pessoa_ad1e50046d8e441abe83a5655280ca621}{Pessoa}.
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+Logica\-Negocio/\-Headers/classe\-Paciente.\-h\item 
+Logica\-Negocio/\-Sources/Metodos\-Classe\-Paciente.\-cpp\end{DoxyCompactItemize}

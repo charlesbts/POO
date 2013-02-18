@@ -1,0 +1,96 @@
+\hypertarget{class_pessoa}{\section{Referência à classe Pessoa}
+\label{class_pessoa}\index{Pessoa@{Pessoa}}
+}
+Diagrama de heranças da classe Pessoa\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pessoa}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_pessoa_a8fdb673974e9abed1dd3687198632a6e}{descadastra\-\_\-pessoa} (string nome)=0
+\begin{DoxyCompactList}\small\item\em Faz um descadastramento de uma \hyperlink{class_pessoa}{Pessoa}. \end{DoxyCompactList}\item 
+virtual list$<$ string $>$ \hyperlink{class_pessoa_ad1e50046d8e441abe83a5655280ca621}{procura\-\_\-pessoa} (string nome)=0
+\begin{DoxyCompactList}\small\item\em Faz uma prcocura de uma \hyperlink{class_pessoa}{Pessoa}. \end{DoxyCompactList}\item 
+virtual list$<$ string $>$ \hyperlink{class_pessoa_af0fd4cc2c5177ff962f5750a314e4209}{lista\-\_\-pessoas} ()=0
+\begin{DoxyCompactList}\small\item\em Faz uma procura de todas as pessoas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_pessoa_a432f9981353f88c03a689fc6b402352d}{string {\bfseries m\-\_\-nome}}\label{class_pessoa_a432f9981353f88c03a689fc6b402352d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_pessoa_a8fdb673974e9abed1dd3687198632a6e}{\index{Pessoa@{Pessoa}!descadastra\-\_\-pessoa@{descadastra\-\_\-pessoa}}
+\index{descadastra\-\_\-pessoa@{descadastra\-\_\-pessoa}!Pessoa@{Pessoa}}
+\subsubsection[{descadastra\-\_\-pessoa}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Pessoa\-::descadastra\-\_\-pessoa (
+\begin{DoxyParamCaption}
+\item[{string}]{nome}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_pessoa_a8fdb673974e9abed1dd3687198632a6e}
+
+
+Faz um descadastramento de uma \hyperlink{class_pessoa}{Pessoa}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em String} & com o nome da \hyperlink{class_pessoa}{Pessoa}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Sucesso ou Fracasso. 
+\end{DoxyReturn}
+
+
+Implementado em \hyperlink{class_paciente_a77b0fded1ef67e647543f17b6f7777b7}{Paciente} e \hyperlink{class_medico_a31e250c654f497eb65bf2f564e89b8b6}{Medico}.
+
+\hypertarget{class_pessoa_af0fd4cc2c5177ff962f5750a314e4209}{\index{Pessoa@{Pessoa}!lista\-\_\-pessoas@{lista\-\_\-pessoas}}
+\index{lista\-\_\-pessoas@{lista\-\_\-pessoas}!Pessoa@{Pessoa}}
+\subsubsection[{lista\-\_\-pessoas}]{\setlength{\rightskip}{0pt plus 5cm}virtual list$<$string$>$ Pessoa\-::lista\-\_\-pessoas (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_pessoa_af0fd4cc2c5177ff962f5750a314e4209}
+
+
+Faz uma procura de todas as pessoas. 
+
+\begin{DoxyReturn}{Retorna}
+Lista de string. 
+\end{DoxyReturn}
+
+
+Implementado em \hyperlink{class_medico_aa3ce2ecd27443218680a8a108ca59df7}{Medico} e \hyperlink{class_paciente_a7f155271c4ca6f08bda3c2cfc7408370}{Paciente}.
+
+\hypertarget{class_pessoa_ad1e50046d8e441abe83a5655280ca621}{\index{Pessoa@{Pessoa}!procura\-\_\-pessoa@{procura\-\_\-pessoa}}
+\index{procura\-\_\-pessoa@{procura\-\_\-pessoa}!Pessoa@{Pessoa}}
+\subsubsection[{procura\-\_\-pessoa}]{\setlength{\rightskip}{0pt plus 5cm}virtual list$<$string$>$ Pessoa\-::procura\-\_\-pessoa (
+\begin{DoxyParamCaption}
+\item[{string}]{nome}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_pessoa_ad1e50046d8e441abe83a5655280ca621}
+
+
+Faz uma prcocura de uma \hyperlink{class_pessoa}{Pessoa}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em String} & com o nome da \hyperlink{class_pessoa}{Pessoa}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Lista de string. 
+\end{DoxyReturn}
+
+
+Implementado em \hyperlink{class_paciente_addf3d1063cdfff76d288b3dd87f06cae}{Paciente} e \hyperlink{class_medico_a3af94b93fe7fbee340d706106ada34b6}{Medico}.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+Logica\-Negocio/\-Headers/classe\-Pessoa.\-h\end{DoxyCompactItemize}

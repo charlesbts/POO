@@ -1,0 +1,125 @@
+\hypertarget{class_banco_dados}{\section{Referência à classe Banco\-Dados}
+\label{class_banco_dados}\index{Banco\-Dados@{Banco\-Dados}}
+}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_banco_dados_a4737c84d1915cb86c5f568069213f173}{Banco\-Dados} (string nome\-Arquivo)
+\begin{DoxyCompactList}\small\item\em Construtor. \end{DoxyCompactList}\item 
+bool \hyperlink{class_banco_dados_a681b815cf0be8091f7eccb2c04f560c5}{open} (string nome\-Arquivo)  throw (\-Banco\-Dados\-Excecao)
+\begin{DoxyCompactList}\small\item\em Usa o Construtor para abrir conex�o com o Banco de Dados. \end{DoxyCompactList}\item 
+list$<$ string $>$ \hyperlink{class_banco_dados_a6a89257a25e728ce786581b73ac5c30a}{executa\-\_\-statement} ()
+\begin{DoxyCompactList}\small\item\em Executa o comando S\-Q\-L. \end{DoxyCompactList}\item 
+void \hyperlink{class_banco_dados_a041b7da76a6def67fd4a6e18ccf47cdd}{prepare} (const string \&query)  throw (\-Banco\-Dados\-Excecao)
+\begin{DoxyCompactList}\small\item\em Prepara o comando S\-Q\-L. \end{DoxyCompactList}\item 
+void \hyperlink{class_banco_dados_a2c6d5b0430a4920920cbc88e0e56dfa1}{liga\-\_\-string} (const int indice, const string \&texto)
+\begin{DoxyCompactList}\small\item\em Liga uma string a determinado comando S\-Q\-L. \end{DoxyCompactList}\item 
+\hypertarget{class_banco_dados_a683b34e4993a36d582542a8753f87789}{void \hyperlink{class_banco_dados_a683b34e4993a36d582542a8753f87789}{close} ()}\label{class_banco_dados_a683b34e4993a36d582542a8753f87789}
+
+\begin{DoxyCompactList}\small\item\em Fecha conex�o com o Banco de Dados. \end{DoxyCompactList}\item 
+\hypertarget{class_banco_dados_ae1ed73b90d2b84126771e55459ffcf96}{\hyperlink{class_banco_dados_ae1ed73b90d2b84126771e55459ffcf96}{$\sim$\-Banco\-Dados} ()}\label{class_banco_dados_ae1ed73b90d2b84126771e55459ffcf96}
+
+\begin{DoxyCompactList}\small\item\em Destrutor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_banco_dados_a4737c84d1915cb86c5f568069213f173}{\index{Banco\-Dados@{Banco\-Dados}!Banco\-Dados@{Banco\-Dados}}
+\index{Banco\-Dados@{Banco\-Dados}!BancoDados@{Banco\-Dados}}
+\subsubsection[{Banco\-Dados}]{\setlength{\rightskip}{0pt plus 5cm}Banco\-Dados\-::\-Banco\-Dados (
+\begin{DoxyParamCaption}
+\item[{string}]{nome\-Arquivo}
+\end{DoxyParamCaption}
+)}}\label{class_banco_dados_a4737c84d1915cb86c5f568069213f173}
+
+
+Construtor. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em Recebe} & o nome do arquivo usado como Banco de Dados. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_banco_dados_a6a89257a25e728ce786581b73ac5c30a}{\index{Banco\-Dados@{Banco\-Dados}!executa\-\_\-statement@{executa\-\_\-statement}}
+\index{executa\-\_\-statement@{executa\-\_\-statement}!BancoDados@{Banco\-Dados}}
+\subsubsection[{executa\-\_\-statement}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ string $>$ Banco\-Dados\-::executa\-\_\-statement (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_banco_dados_a6a89257a25e728ce786581b73ac5c30a}
+
+
+Executa o comando S\-Q\-L. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna uma lista caso o comando S\-Q\-L exija retorno. 
+\end{DoxyReturn}
+\hypertarget{class_banco_dados_a2c6d5b0430a4920920cbc88e0e56dfa1}{\index{Banco\-Dados@{Banco\-Dados}!liga\-\_\-string@{liga\-\_\-string}}
+\index{liga\-\_\-string@{liga\-\_\-string}!BancoDados@{Banco\-Dados}}
+\subsubsection[{liga\-\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}void Banco\-Dados\-::liga\-\_\-string (
+\begin{DoxyParamCaption}
+\item[{const int}]{indice, }
+\item[{const string \&}]{texto}
+\end{DoxyParamCaption}
+)}}\label{class_banco_dados_a2c6d5b0430a4920920cbc88e0e56dfa1}
+
+
+Liga uma string a determinado comando S\-Q\-L. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em 1} & -\/ Recebe o indice. \\
+\hline
+{\em 2} & -\/ Conteudo da string. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_banco_dados_a681b815cf0be8091f7eccb2c04f560c5}{\index{Banco\-Dados@{Banco\-Dados}!open@{open}}
+\index{open@{open}!BancoDados@{Banco\-Dados}}
+\subsubsection[{open}]{\setlength{\rightskip}{0pt plus 5cm}bool Banco\-Dados\-::open (
+\begin{DoxyParamCaption}
+\item[{string}]{nome\-Arquivo}
+\end{DoxyParamCaption}
+)  throw ({\bf Banco\-Dados\-Excecao})}}\label{class_banco_dados_a681b815cf0be8091f7eccb2c04f560c5}
+
+
+Usa o Construtor para abrir conex�o com o Banco de Dados. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em Recebe} & o nome do Banco de Dados. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepções}
+{\em Objeto} & \hyperlink{class_banco_dados_excecao}{Banco\-Dados\-Excecao}. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_banco_dados_a041b7da76a6def67fd4a6e18ccf47cdd}{\index{Banco\-Dados@{Banco\-Dados}!prepare@{prepare}}
+\index{prepare@{prepare}!BancoDados@{Banco\-Dados}}
+\subsubsection[{prepare}]{\setlength{\rightskip}{0pt plus 5cm}void Banco\-Dados\-::prepare (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{query}
+\end{DoxyParamCaption}
+)  throw ({\bf Banco\-Dados\-Excecao})}}\label{class_banco_dados_a041b7da76a6def67fd4a6e18ccf47cdd}
+
+
+Prepara o comando S\-Q\-L. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em Recebe} & uma string contendo o comando S\-Q\-L. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepções}
+{\em Objeto} & \hyperlink{class_banco_dados_excecao}{Banco\-Dados\-Excecao}. \\
+\hline
+\end{DoxyExceptions}
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+Banco\-Dados/\-Headers/Banco\-Dados.\-h\item 
+Banco\-Dados/\-Sources/Banco\-Dados.\-cpp\end{DoxyCompactItemize}

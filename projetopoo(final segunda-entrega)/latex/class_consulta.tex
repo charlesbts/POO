@@ -1,0 +1,244 @@
+\hypertarget{class_consulta}{\section{Referência à classe Consulta}
+\label{class_consulta}\index{Consulta@{Consulta}}
+}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_consulta_a941db28c9c5f5606fcbfcbd76a4381a7}{\hyperlink{class_consulta_a941db28c9c5f5606fcbfcbd76a4381a7}{Consulta} ()}\label{class_consulta_a941db28c9c5f5606fcbfcbd76a4381a7}
+
+\begin{DoxyCompactList}\small\item\em Construtor. \end{DoxyCompactList}\item 
+\hyperlink{class_consulta_a8074f5a2be2c5362f9d4ed926084a171}{Consulta} (string nome\-Paciente, string nome\-Medico)
+\begin{DoxyCompactList}\small\item\em Construtor. \end{DoxyCompactList}\item 
+bool \hyperlink{class_consulta_a4dd4cf903ccb6dee0d0b98f9e0d6723f}{marca\-\_\-consulta} (string nome\-Paciente, string nome\-Medico)
+\begin{DoxyCompactList}\small\item\em Usa o Construtor para preencher um objeto \hyperlink{class_consulta}{Consulta}. \end{DoxyCompactList}\item 
+list$<$ string $>$ \hyperlink{class_consulta_a5865387346892f1d2c3cedf17208e0f9}{procura\-\_\-consulta} (string nome\-Paciente, string nome\-Medico)
+\begin{DoxyCompactList}\small\item\em Faz uma procura de uma determinada consulta. \end{DoxyCompactList}\item 
+bool \hyperlink{class_consulta_a605823e9b63d7fcb2c1ce72a6abfc8a4}{remarca\-\_\-consulta} (string nome\-Paciente, string nome\-Medico)
+\begin{DoxyCompactList}\small\item\em Faz um cancelamento seguido de uma marca��o de uma determinada consulta. \end{DoxyCompactList}\item 
+bool \hyperlink{class_consulta_a4a3e7179cecd30acdc1d650c43dcd791}{cancela\-\_\-consulta} (string nome\-Paciente, string nome\-Medico)
+\begin{DoxyCompactList}\small\item\em Faz um cancelamento de uma determinada consulta. \end{DoxyCompactList}\item 
+list$<$ string $>$ \hyperlink{class_consulta_ac9e1df66b72a58e686cb1a9f92640938}{lista\-\_\-consultas} ()
+\begin{DoxyCompactList}\small\item\em Procura por todas as consultas. \end{DoxyCompactList}\item 
+list$<$ string $>$ \hyperlink{class_consulta_a81343df26aa44fff6a442b4ab1f1b74a}{procura\-\_\-pacientes\-\_\-de\-\_\-um\-\_\-medico} (string nome\-Medico)
+\begin{DoxyCompactList}\small\item\em Procura por todas os pacientes em consulta com um determinado m�dico. \end{DoxyCompactList}\item 
+list$<$ string $>$ \hyperlink{class_consulta_af4b80d6d2093aa080bc46bd82ed229f1}{procura\-\_\-medicos\-\_\-de\-\_\-um\-\_\-paciente} (string nome\-Paciente)
+\begin{DoxyCompactList}\small\item\em Procura por todas os m�dicos em consulta com um determinado paciente. \end{DoxyCompactList}\item 
+list$<$ string $>$ \hyperlink{class_consulta_aed60e73a86ace3cc6152574e8e29326b}{procura\-\_\-consultas\-\_\-paciente} (string nome\-Paciente)
+\begin{DoxyCompactList}\small\item\em Procura por todas as consultas de um determinado paciente. \end{DoxyCompactList}\item 
+list$<$ string $>$ \hyperlink{class_consulta_a65aee9c3e8e1580d2b31f247f3d11f59}{procura\-\_\-consultas\-\_\-medico} (string nome\-Medico)
+\begin{DoxyCompactList}\small\item\em Procura por todas as consultas de um determinado m�dico. \end{DoxyCompactList}\item 
+\hypertarget{class_consulta_aa1769d73f3d69ad8f8794d150337320f}{void \hyperlink{class_consulta_aa1769d73f3d69ad8f8794d150337320f}{gera\-\_\-codigo} ()}\label{class_consulta_aa1769d73f3d69ad8f8794d150337320f}
+
+\begin{DoxyCompactList}\small\item\em Gera o c�digo da consulta. \end{DoxyCompactList}\item 
+\hypertarget{class_consulta_a619b1ed733470d7553a893227ae5884a}{\hyperlink{class_consulta_a619b1ed733470d7553a893227ae5884a}{$\sim$\-Consulta} ()}\label{class_consulta_a619b1ed733470d7553a893227ae5884a}
+
+\begin{DoxyCompactList}\small\item\em Destrutor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_consulta_af88c187b3a43ba8b5ac54a590773fd28}{string {\bfseries m\-\_\-paciente}}\label{class_consulta_af88c187b3a43ba8b5ac54a590773fd28}
+
+\item 
+\hypertarget{class_consulta_a7fe2c7ce76a0b191d24128494ddfd65a}{string {\bfseries m\-\_\-medico}}\label{class_consulta_a7fe2c7ce76a0b191d24128494ddfd65a}
+
+\item 
+\hypertarget{class_consulta_a79f5e0c95e52911b3c70404a9c3dea44}{string {\bfseries m\-\_\-codigo}}\label{class_consulta_a79f5e0c95e52911b3c70404a9c3dea44}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_consulta_a8074f5a2be2c5362f9d4ed926084a171}{\index{Consulta@{Consulta}!Consulta@{Consulta}}
+\index{Consulta@{Consulta}!Consulta@{Consulta}}
+\subsubsection[{Consulta}]{\setlength{\rightskip}{0pt plus 5cm}Consulta\-::\-Consulta (
+\begin{DoxyParamCaption}
+\item[{string}]{nome\-Paciente, }
+\item[{string}]{nome\-Medico}
+\end{DoxyParamCaption}
+)}}\label{class_consulta_a8074f5a2be2c5362f9d4ed926084a171}
+
+
+Construtor. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em 1} & -\/ Nome do \hyperlink{class_paciente}{Paciente}. \\
+\hline
+{\em 2} & -\/ Nome do M�dico. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_consulta_a4a3e7179cecd30acdc1d650c43dcd791}{\index{Consulta@{Consulta}!cancela\-\_\-consulta@{cancela\-\_\-consulta}}
+\index{cancela\-\_\-consulta@{cancela\-\_\-consulta}!Consulta@{Consulta}}
+\subsubsection[{cancela\-\_\-consulta}]{\setlength{\rightskip}{0pt plus 5cm}bool Consulta\-::cancela\-\_\-consulta (
+\begin{DoxyParamCaption}
+\item[{string}]{nome\-Paciente, }
+\item[{string}]{nome\-Medico}
+\end{DoxyParamCaption}
+)}}\label{class_consulta_a4a3e7179cecd30acdc1d650c43dcd791}
+
+
+Faz um cancelamento de uma determinada consulta. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em 1} & -\/ Nome do \hyperlink{class_paciente}{Paciente}. \\
+\hline
+{\em 2} & -\/ Nome do M�dico. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_consulta_ac9e1df66b72a58e686cb1a9f92640938}{\index{Consulta@{Consulta}!lista\-\_\-consultas@{lista\-\_\-consultas}}
+\index{lista\-\_\-consultas@{lista\-\_\-consultas}!Consulta@{Consulta}}
+\subsubsection[{lista\-\_\-consultas}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ string $>$ Consulta\-::lista\-\_\-consultas (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_consulta_ac9e1df66b72a58e686cb1a9f92640938}
+
+
+Procura por todas as consultas. 
+
+\begin{DoxyReturn}{Retorna}
+Lista de string. 
+\end{DoxyReturn}
+\hypertarget{class_consulta_a4dd4cf903ccb6dee0d0b98f9e0d6723f}{\index{Consulta@{Consulta}!marca\-\_\-consulta@{marca\-\_\-consulta}}
+\index{marca\-\_\-consulta@{marca\-\_\-consulta}!Consulta@{Consulta}}
+\subsubsection[{marca\-\_\-consulta}]{\setlength{\rightskip}{0pt plus 5cm}bool Consulta\-::marca\-\_\-consulta (
+\begin{DoxyParamCaption}
+\item[{string}]{nome\-Paciente, }
+\item[{string}]{nome\-Medico}
+\end{DoxyParamCaption}
+)}}\label{class_consulta_a4dd4cf903ccb6dee0d0b98f9e0d6723f}
+
+
+Usa o Construtor para preencher um objeto \hyperlink{class_consulta}{Consulta}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em 1} & -\/ Nome do \hyperlink{class_paciente}{Paciente}. \\
+\hline
+{\em 2} & -\/ Nome do M�dico. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_consulta_a5865387346892f1d2c3cedf17208e0f9}{\index{Consulta@{Consulta}!procura\-\_\-consulta@{procura\-\_\-consulta}}
+\index{procura\-\_\-consulta@{procura\-\_\-consulta}!Consulta@{Consulta}}
+\subsubsection[{procura\-\_\-consulta}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ string $>$ Consulta\-::procura\-\_\-consulta (
+\begin{DoxyParamCaption}
+\item[{string}]{nome\-Paciente, }
+\item[{string}]{nome\-Medico}
+\end{DoxyParamCaption}
+)}}\label{class_consulta_a5865387346892f1d2c3cedf17208e0f9}
+
+
+Faz uma procura de uma determinada consulta. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em 1} & -\/ Nome do \hyperlink{class_paciente}{Paciente}. \\
+\hline
+{\em 2} & -\/ Nome do M�dico. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_consulta_a65aee9c3e8e1580d2b31f247f3d11f59}{\index{Consulta@{Consulta}!procura\-\_\-consultas\-\_\-medico@{procura\-\_\-consultas\-\_\-medico}}
+\index{procura\-\_\-consultas\-\_\-medico@{procura\-\_\-consultas\-\_\-medico}!Consulta@{Consulta}}
+\subsubsection[{procura\-\_\-consultas\-\_\-medico}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ string $>$ Consulta\-::procura\-\_\-consultas\-\_\-medico (
+\begin{DoxyParamCaption}
+\item[{string}]{nome\-Medico}
+\end{DoxyParamCaption}
+)}}\label{class_consulta_a65aee9c3e8e1580d2b31f247f3d11f59}
+
+
+Procura por todas as consultas de um determinado m�dico. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em String} & com o nome do m�dico. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Lista de string. 
+\end{DoxyReturn}
+\hypertarget{class_consulta_aed60e73a86ace3cc6152574e8e29326b}{\index{Consulta@{Consulta}!procura\-\_\-consultas\-\_\-paciente@{procura\-\_\-consultas\-\_\-paciente}}
+\index{procura\-\_\-consultas\-\_\-paciente@{procura\-\_\-consultas\-\_\-paciente}!Consulta@{Consulta}}
+\subsubsection[{procura\-\_\-consultas\-\_\-paciente}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ string $>$ Consulta\-::procura\-\_\-consultas\-\_\-paciente (
+\begin{DoxyParamCaption}
+\item[{string}]{nome\-Paciente}
+\end{DoxyParamCaption}
+)}}\label{class_consulta_aed60e73a86ace3cc6152574e8e29326b}
+
+
+Procura por todas as consultas de um determinado paciente. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em String} & com o nome do paciente. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Lista de string. 
+\end{DoxyReturn}
+\hypertarget{class_consulta_af4b80d6d2093aa080bc46bd82ed229f1}{\index{Consulta@{Consulta}!procura\-\_\-medicos\-\_\-de\-\_\-um\-\_\-paciente@{procura\-\_\-medicos\-\_\-de\-\_\-um\-\_\-paciente}}
+\index{procura\-\_\-medicos\-\_\-de\-\_\-um\-\_\-paciente@{procura\-\_\-medicos\-\_\-de\-\_\-um\-\_\-paciente}!Consulta@{Consulta}}
+\subsubsection[{procura\-\_\-medicos\-\_\-de\-\_\-um\-\_\-paciente}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ string $>$ Consulta\-::procura\-\_\-medicos\-\_\-de\-\_\-um\-\_\-paciente (
+\begin{DoxyParamCaption}
+\item[{string}]{nome\-Paciente}
+\end{DoxyParamCaption}
+)}}\label{class_consulta_af4b80d6d2093aa080bc46bd82ed229f1}
+
+
+Procura por todas os m�dicos em consulta com um determinado paciente. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em String} & com o nome do paciente. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Lista de string. 
+\end{DoxyReturn}
+\hypertarget{class_consulta_a81343df26aa44fff6a442b4ab1f1b74a}{\index{Consulta@{Consulta}!procura\-\_\-pacientes\-\_\-de\-\_\-um\-\_\-medico@{procura\-\_\-pacientes\-\_\-de\-\_\-um\-\_\-medico}}
+\index{procura\-\_\-pacientes\-\_\-de\-\_\-um\-\_\-medico@{procura\-\_\-pacientes\-\_\-de\-\_\-um\-\_\-medico}!Consulta@{Consulta}}
+\subsubsection[{procura\-\_\-pacientes\-\_\-de\-\_\-um\-\_\-medico}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ string $>$ Consulta\-::procura\-\_\-pacientes\-\_\-de\-\_\-um\-\_\-medico (
+\begin{DoxyParamCaption}
+\item[{string}]{nome\-Medico}
+\end{DoxyParamCaption}
+)}}\label{class_consulta_a81343df26aa44fff6a442b4ab1f1b74a}
+
+
+Procura por todas os pacientes em consulta com um determinado m�dico. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em String} & com o nome do m�dico. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Lista de string. 
+\end{DoxyReturn}
+\hypertarget{class_consulta_a605823e9b63d7fcb2c1ce72a6abfc8a4}{\index{Consulta@{Consulta}!remarca\-\_\-consulta@{remarca\-\_\-consulta}}
+\index{remarca\-\_\-consulta@{remarca\-\_\-consulta}!Consulta@{Consulta}}
+\subsubsection[{remarca\-\_\-consulta}]{\setlength{\rightskip}{0pt plus 5cm}bool Consulta\-::remarca\-\_\-consulta (
+\begin{DoxyParamCaption}
+\item[{string}]{nome\-Paciente, }
+\item[{string}]{nome\-Medico}
+\end{DoxyParamCaption}
+)}}\label{class_consulta_a605823e9b63d7fcb2c1ce72a6abfc8a4}
+
+
+Faz um cancelamento seguido de uma marca��o de uma determinada consulta. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em 1} & -\/ Nome do \hyperlink{class_paciente}{Paciente}. \\
+\hline
+{\em 2} & -\/ Nome do M�dico. \\
+\hline
+\end{DoxyParams}
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+Logica\-Negocio/\-Headers/classe\-Consulta.\-h\item 
+Logica\-Negocio/\-Sources/Metodos\-Classe\-Consulta.\-cpp\end{DoxyCompactItemize}

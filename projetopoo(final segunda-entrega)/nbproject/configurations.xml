@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="84">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Arquivos de Cabeçalho"
+                   projectFiles="true">
+      <logicalFolder name="Headers"
+                     displayName="InterfaceUsuario"
+                     projectFiles="true">
+        <itemPath>InterfaceUsuario/Headers/classeInterfaceUsuario.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Headers" displayName="Logica_Negocio" projectFiles="true">
+        <itemPath>LogicaNegocio/Headers/classeConsulta.h</itemPath>
+        <itemPath>LogicaNegocio/Headers/classeMedico.h</itemPath>
+        <itemPath>LogicaNegocio/Headers/classePaciente.h</itemPath>
+        <itemPath>LogicaNegocio/Headers/classePessoa.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Headers" displayName="Persistencia" projectFiles="true">
+        <itemPath>BancoDados/Headers/BancoDados.h</itemPath>
+        <itemPath>BancoDados/Headers/rotinasBD.h</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Arquivos de Código-Fonte"
+                   projectFiles="true">
+      <logicalFolder name="Sources"
+                     displayName="InterfaceUsuario"
+                     projectFiles="true">
+        <itemPath>InterfaceUsuario/Sources/MetodosIntefaceUsuario.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Sources" displayName="Logica_Negocio" projectFiles="true">
+        <itemPath>LogicaNegocio/Sources/MetodosClasseConsulta.cpp</itemPath>
+        <itemPath>LogicaNegocio/Sources/MetodosClasseMedico.cpp</itemPath>
+        <itemPath>LogicaNegocio/Sources/MetodosClassePaciente.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Sources" displayName="Persistencia" projectFiles="true">
+        <itemPath>BancoDados/Sources/BancoDados.cpp</itemPath>
+        <itemPath>BancoDados/Sources/ExcecoesBancoDados.cpp</itemPath>
+        <itemPath>BancoDados/Sources/RotinasBD.cpp</itemPath>
+      </logicalFolder>
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Arquivos de Recurso"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Arquivos de Teste"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+      <logicalFolder name="f1" displayName="TesteBD" projectFiles="true" kind="TEST">
+        <itemPath>TESTES/RunnerBD.cpp</itemPath>
+        <itemPath>TESTES/newtestclass.cpp</itemPath>
+        <itemPath>TESTES/newtestclass.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f4"
+                     displayName="TesteClasseConsulta"
+                     projectFiles="true"
+                     kind="TEST">
+        <itemPath>TESTES/LogicaNegocio/TesteClasseConsulta/RunnerClasseConsulta.cpp</itemPath>
+        <itemPath>TESTES/LogicaNegocio/TesteClasseConsulta/TesteClasseConsulta.cpp</itemPath>
+        <itemPath>TESTES/LogicaNegocio/TesteClasseConsulta/TesteClasseConsulta.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f3"
+                     displayName="TesteClasseMedico"
+                     projectFiles="true"
+                     kind="TEST">
+        <itemPath>TESTES/LogicaNegocio/RunnerMedico.cpp</itemPath>
+        <itemPath>TESTES/LogicaNegocio/TesteClasseMedico.cpp</itemPath>
+        <itemPath>TESTES/LogicaNegocio/TesteClasseMedico.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2"
+                     displayName="TesteClassePaciente"
+                     projectFiles="true"
+                     kind="TEST">
+        <itemPath>TESTES/LogicaNegocio/RunnerClassePaciente.cpp</itemPath>
+        <itemPath>TESTES/LogicaNegocio/TesteClassePaciente.cpp</itemPath>
+        <itemPath>TESTES/LogicaNegocio/TesteClassePaciente.h</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Arquivos Importantes"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>MakePOO</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>BancoDados/Headers</Elem>
+    <Elem>InterfaceUsuario/Headers</Elem>
+    <Elem>LogicaNegocio/Headers</Elem>
+    <Elem>BancoDados/Sources</Elem>
+    <Elem>InterfaceUsuario/Sources</Elem>
+    <Elem>LogicaNegocio/Sources</Elem>
+  </sourceRootList>
+  <projectmakefile>MakePOO</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibLibItem>sqlite3</linkerLibLibItem>
+            <linkerLibLibItem>sqlite3.dll</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <folder path="TestFiles/f1">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f1</output>
+          <linkerLibItems>
+            <linkerLibStdlibItem>CppUnit</linkerLibStdlibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
+      <folder path="TestFiles/f2">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f2</output>
+          <linkerLibItems>
+            <linkerLibStdlibItem>CppUnit</linkerLibStdlibItem>
+            <linkerLibStdlibItem>CppUnit</linkerLibStdlibItem>
+            <linkerLibStdlibItem>CppUnit</linkerLibStdlibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
+      <folder path="TestFiles/f3">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f3</output>
+          <linkerLibItems>
+            <linkerLibStdlibItem>CppUnit</linkerLibStdlibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
+      <folder path="TestFiles/f4">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f4</output>
+          <linkerLibItems>
+            <linkerLibStdlibItem>CppUnit</linkerLibStdlibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+    </conf>
+  </confs>
+</configurationDescriptor>
